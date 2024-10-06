@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Caja pequeña",
+        "price": 20,
+        "description": "Entre 6 a 7 kilos de fruta o verdura de temporada, ideal para 1 o 2 personas"
+    },
+    {
+        "name": "Caja mediana",
+        "price": 24,
+        "description": "Entre 9 a 10 kilos de fruta o verdura de temporada, ideal para 2 o 3 personas"
+    },
+    {
+        "name": "Caja grande",
+        "price": 2,
+        "description": "Entre 14 a 15 kilos de fruta o verdura de temproada, ideal para 4 o 5 personas"
+    }
+]

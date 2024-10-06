@@ -1,0 +1,39 @@
+[
+    {
+        "email": "steve.morales@pucp.pe",
+        "name": "Steve",
+        "lastname": "Morales",
+        "password": "morales",
+        "type": "SUPERADMIN"
+      },
+      {
+        "email": "claudia.morales@pucp.pe",
+        "name": "Claudia",
+        "lastname": "Morales",
+        "password": "morales",
+        "type": "SUPERADMIN"
+      },
+      {
+        "email": "juan.perez@gmail.com",
+        "name": "Juan",
+        "lastname": "Perez",
+        "password": "perez",
+        "type": "SALESMAN"
+      },
+      {
+        "email": "juanita.hinostroza@gmail.com",
+        "name": "Juanita",
+        "lastname": "Hinostroza",
+        "password": "hinostroza",
+        "type": "ADMIN"
+      },
+      {
+        "email": "pepe.lucho@gmail.com",
+        "name": "Pepe",
+        "lastname": "Lucho",
+        "password": "lucho",
+        "type": "CLIENT"
+      }
+
+  ]
+  
