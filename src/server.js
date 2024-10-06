@@ -4,7 +4,7 @@ const cors = require("cors");
 const { json } = require("express");
 
 const authRouter = require("./routes/auth.routes.js");
-
+const userRouter = require("./routes/users.routes.js");
 
 const app = express();
 const port = process.env.PORT;
@@ -17,12 +17,12 @@ app.use((req, res, next) => {
 });
 
 app.use(authRouter);
+app.use(userRouter);
 
 app.get("/", (req, res) => {
   res.send("Get en raiz");
 });
 
-app.listen(port, ()=>{
-    console.log(`Servidor corriendo en el puero ${port} (⌐■_■) Yeah Chikibaby`);
-    
-})
+app.listen(port, () => {
+  console.log(`Servidor corriendo en el puero ${port} (⌐■_■) Yeah Chikibaby`);
+});
