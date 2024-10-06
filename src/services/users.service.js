@@ -1,5 +1,4 @@
 const prisma = require("../utils/prisma");
-const findUser = require("../utils/findUser");
 
 class UsersService {
   static async post(body) {

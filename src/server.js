@@ -4,7 +4,8 @@ const cors = require("cors");
 const { json } = require("express");
 
 const authRouter = require("./routes/auth.routes.js");
-const userRouter = require("./routes/users.routes.js");
+const usersRouter = require("./routes/users.routes.js");
+const productsRouter = require("./routes/products.routes.js");
 
 const app = express();
 const port = process.env.PORT;
@@ -17,7 +18,8 @@ app.use((req, res, next) => {
 });
 
 app.use(authRouter);
-app.use(userRouter);
+app.use(usersRouter);
+app.use(productsRouter);
 
 app.get("/", (req, res) => {
   res.send("Get en raiz");
