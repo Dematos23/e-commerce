@@ -16,7 +16,8 @@ model Users {
   lastname  String
   password  String
   type      UserType
-  orders    Orders[] @relation("OrdersUsers")
+  orders    Orders[]
+  // orders    Orders[] @relation("OrdersUsers")
 }
 
 enum UserType {
@@ -43,6 +44,8 @@ model Orders {
   updatedAt    DateTime   @updatedAt
   deliveryData DateTime
   observation  String?
-  users        Users[]    @relation("OrdersUsers")
+  userId       String
+  user         Users      @relation(fields: [userId], references: [id])
+  // users        Users[]    @relation("OrdersUsers")
   products     Products[] @relation("OrdersProducts")
 }
